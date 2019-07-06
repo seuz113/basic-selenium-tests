@@ -20,5 +20,10 @@ It is possible to execute test using any of the two following ways:
     `python3 -m pytest google_search_suggestions.py --alluredir ./results`
  
 ## How generate and see the report?
-Using the command `--alluredir ./results`the test is able to generate automatically some JSON files with the tests results, those files are read by Allure and showing in a nice way.
+Using the command `--alluredir ./results`the test is able to generate automatically some JSON files with the tests results, those files are read by Allure and showing in a nice way using the following command:
+
+`allure serve results/`
+
+Of course previous command should be executed once the test finish and results folder contains the files that Allure will be reading.
+
 
