@@ -4,14 +4,13 @@ from helper.common_operations import *
 import unittest
 import allure
 
-
 class GoogleSearch(unittest.TestCase):
 
     def setUp(self):
         self.driver = set_up_chrome(google_url)
 
     #Test Case #GS-001
-    @allure.step("Validate site is launched")
+    @allure.step("Validate that site is launched")
     def test_validate_home_page_field_button(self):
         self.type_text = write_on_element(self.driver, "CSS", main_input, "testing")
         self.button_search = self.driver.find_element_by_css_selector(search_button)
@@ -20,7 +19,6 @@ class GoogleSearch(unittest.TestCase):
             assert(True)
         else:
             assert(False)
-       
 
     #Test Case #GS-002
     @allure.step("Search Information Using search button")
