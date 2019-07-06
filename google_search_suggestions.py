@@ -21,8 +21,6 @@ class GoogleSearchSuggestions(unittest.TestCase):
         else:
             assert False, "The suggestion menu was not displyaed"
 
-
-
     #Test Case #GS-002
     @allure.step("Get Result page after click on suggestion list")
     def test_select_option_from_suggestion(self):
@@ -39,7 +37,6 @@ class GoogleSearchSuggestions(unittest.TestCase):
         else:
             assert False, colored("Result page wasn't displyaed", "red")
 
-
     #Test Case #GS-003
     @allure.step("Open first page found using suggestion")
     def test_go_the_books_page(self):
@@ -55,7 +52,6 @@ class GoogleSearchSuggestions(unittest.TestCase):
         print(text_element)
 
         assert (text_element == "Patrick Rothfuss - The Books"), colored("First Page found isn't Patrick Rothfuss - The Books", "red")
-
 
     def tearDown(self):
         self.driver.quit()
