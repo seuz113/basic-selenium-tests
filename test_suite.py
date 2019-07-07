@@ -10,6 +10,3 @@ class TestSuite(unittest.TestCase):
             unittest.defaultTestLoader.loadTestsFromTestCase(google_search_suggestions.GoogleSearchSuggestions),
         ])
         suite.run(unittest.TestResult())
-
-if __name__ == '__main__':
-    unittest.main()
