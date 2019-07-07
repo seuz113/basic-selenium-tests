@@ -8,6 +8,8 @@ class GoogleSearch(unittest.TestCase):
 
     def setUp(self):
         self.driver = set_up_chrome(google_url)
+        element = wait_for_element(self.driver, "CSS", change_language)
+        click_element(element)
 
     #Test Case #GS-001
     @allure.step("Validate that site is launched")

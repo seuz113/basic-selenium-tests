@@ -29,3 +29,6 @@ title_page_first_link = "firstHeading"
 
 #CSS google result page
 result_page_google = "#rhscol"
+
+#Change languague manually
+change_language = "#SIvCob > a"
